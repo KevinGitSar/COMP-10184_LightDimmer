@@ -36,8 +36,10 @@ void loop() {
   // If On use resistor to dim/turn on light
   // If Off the light will be off completely
   if(onOff == true){
+    // ON - When on go to value of resistor to change light setting
     analogWrite(D4, iVal);
   } else if(onOff == false){
+    // OFF - Simply Turns Off
     digitalWrite(D4, HIGH);
   }
   
